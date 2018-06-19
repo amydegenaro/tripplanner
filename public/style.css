@@ -12,3 +12,27 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
+#main {
+  display: flex;
+}
+
+#navbar {
+  display: flex;
+  background-color: crimson;
+  height: 50px;
+}
+#options {
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  background-color: darkslateblue
+
+}
+#sidebar {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
