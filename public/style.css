@@ -8,13 +8,24 @@ body {
   background-color: #C1B5AD;
 }
 
-#map {
-  height: 100vh;
-  width: 100vw;
-}
-
 #main {
   display: flex;
+  flex-direction: row;
+  flex-direction: column;
+}
+
+#map {
+  height: 50vh;
+  /* width: 100vw; */
+  flex-grow: 4;
+}
+
+#sidebar {
+  /* width: 25%; */
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  flex-grow: 1;
 }
 
 #navbar {
@@ -22,17 +33,21 @@ body {
   background-color: crimson;
   height: 50px;
 }
+
 #options {
-
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
-  background-color: darkslateblue
-
+  /* margin-bottom: 25px; */
+  background-color: darkslateblue;
+  padding: 10px
 }
-#sidebar {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
+
+@media (min-width: 500px) {
+  #main {
+    flex-direction: row;
+  }
+
+  #map {
+    height: 100vh;
+  }
 }
